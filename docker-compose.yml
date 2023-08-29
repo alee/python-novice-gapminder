@@ -1,0 +1,7 @@
+services:
+  server:
+    image: ghcr.io/uomresearchit/sandpaper:latest  # switch to `latest_arm` for macos
+    volumes:
+      - ./:/siteroot
+    ports:
+      - "127.0.0.1:4321:4321"
